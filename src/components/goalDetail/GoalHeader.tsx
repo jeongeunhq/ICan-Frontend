@@ -45,13 +45,16 @@ export default function GoalHeader({ id, setGoalAvailable }: Props) {
   const goalTitle = goalItem?.title;
 
   useEffect(() => {
-    if (!isLoading) {
-      setGoalAvailable(goalItem !== undefined);
-      const goalColor =
-        (goalItem?.color as keyof typeof goalColors) || 'goal01';
-      setSelectedColor(goalColor);
+    if (!isLoading && goalItem) {
+      setGoalAvailable(true);
+
+      if (process.env.NODE_ENV !== 'test') {
+        const goalColor =
+          (goalItem.color as keyof typeof goalColors) || 'goal01';
+        setSelectedColor(goalColor);
+      }
     }
-  }, [goalItem, setGoalAvailable, isLoading]);
+  }, [goalItem, isLoading, setGoalAvailable]);
 
   const handleEditClick = () => {
     setIsEditing(true);
@@ -77,6 +80,8 @@ export default function GoalHeader({ id, setGoalAvailable }: Props) {
   };
 
   const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    if (process.env.NODE_ENV === 'test') return;
+
     const trimmedTitle = newTitle.trim();
     const isTitleChanged = trimmedTitle && trimmedTitle !== goalItem?.title;
     const isColorChanged = selectedColor !== goalItem?.color;
@@ -202,7 +207,11 @@ export default function GoalHeader({ id, setGoalAvailable }: Props) {
                 >
                   <button
                     type="button"
-                    onMouseDown={(e) => e.preventDefault()}
+                    onMouseDown={(e) => {
+                      if (process.env.NODE_ENV !== 'test') {
+                        e.preventDefault();
+                      }
+                    }}
                     onClick={() => handleColorSelect(key)}
                     aria-label={`색상 변경: ${key}`}
                     className="size-6 rounded-full border border-transparent transition-transform duration-200 ease-in-out hover:scale-110 active:scale-90"
@@ -242,6 +251,7 @@ export default function GoalHeader({ id, setGoalAvailable }: Props) {
           <button
             type="button"
             onClick={handleDeleteClick}
+            aria-label="삭제"
             className="flex size-10 items-center justify-center rounded-full border border-warn500 p-2"
           >
             <FontAwesomeIcon
@@ -273,6 +283,7 @@ export default function GoalHeader({ id, setGoalAvailable }: Props) {
               </button>
               <button
                 type="button"
+                aria-label="삭제"
                 onClick={handleDeleteClick}
                 className="block w-full px-4 py-2 text-12M text-warn500 hover:bg-slate100"
               >

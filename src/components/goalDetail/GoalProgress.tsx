@@ -34,6 +34,7 @@ export default function GoalProgress({ doneItems, todoItems, color }: Props) {
         <div className="relative h-5 w-full overflow-hidden rounded-full bg-gs200">
           <motion.div
             className="h-5 rounded-full"
+            data-testid="progress-bar"
             style={{ backgroundColor: color.DEFAULT, width: `${progress}%` }}
             initial={{ width: 0 }}
             animate={{ width: `${progress}%` }}

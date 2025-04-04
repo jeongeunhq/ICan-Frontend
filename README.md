@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 I CAN – 당신의 할 일을 스마트하게 관리하는 방법!
+I CAN은 사용자가 할 일을 쉽고 효율적으로 관리할 수 있도록 도와주는 투두 관리 웹 애플리케이션입니다.
 
-## Getting Started
+-  일정을 한눈에 확인하고
+-  할 일을 장바구니에 담듯 간편하게 추가하며
+-  다크모드와 다양한 테마 설정을 통해 나만의 맞춤형 환경을 만들 수 있어요.
 
-First, run the development server:
+## ✨ 주요 기능 
+### 🏠 대시보드
+로그인 후 사용자에게 보여지는 페이지입니다.
+![Image](https://github.com/user-attachments/assets/1b4fc84b-682a-40fc-ab27-544c180f3c0e)
+**오늘의 할일 목록**<br>
+오늘 날짜를 기반으로 해야 할 일들의 리스트를 보여줍니다.<br><br>
+**목표별 할 일 관리**<br>
+목표별 탭을 이동하며 각 목표에 해당하는 할일을 볼 수 있습니다.<br><br>
+**금일 진행도**<br>
+오늘 완료한 할 일의 비율을 그래프로 보여주어 사용자가 하루 동안 얼마나 일정을 완료했는지 확인할 수 있습니다. <br><br>
+**올해 달성률**<br>
+올해 하루 완료율을 잔디밭 형태의 그래프로 제공합니다.
+### 📆 캘린더
+월별 일정을 한눈에 확인하고, 원하는 날짜에 할 일을 손쉽게 생성 및 관리할 수 있는 달력 기반 일정 관리 페이지입니다. 
+| **캘린더** | **할일 생성** |
+|-------------|-------------|
+| ![Image](https://github.com/user-attachments/assets/5e39fd48-da17-4195-9821-ea2b14cd7ad5) | ![Image](https://github.com/user-attachments/assets/5beefba9-0172-4524-b69b-ddd514d4b20c) |
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**월별 일정 확인**  
+달력 형태로 이번 달에 등록된 모든 할 일을 보여줍니다.
+각 날짜에 할 일은 목표 색상에 따라 표시되며 목표가 없는 경우 기본 테마 색상이 적용됩니다.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**일별 일정 확인**  
+특정 날짜를 클릭하면 해당 날짜에 등록된 할 일 리스트가 우측 패널에 표시됩니다.  
+리스트에서 할 일을 바로 확인하고 관리할 수 있습니다.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**할 일 추가**  
+선택한 날짜에 할 일 추가 시 목표를 연동하여 목표 중심의 일정 관리가 가능합니다.  
+또한 해당 할 일을 수정, 삭제가 가능합니다.
 
-## Learn More
+**할 일 장바구니**  
+날짜가 정해지지 않은 할 일을 임시로 저장할 수 있는 장바구니 기능을 제공합니다.
 
-To learn more about Next.js, take a look at the following resources:
+**드래그 앤 드롭 기능**  
+장바구니에 담긴 할 일을 캘린더의 특정 날짜로 드래그 앤 드롭하면
+해당 날짜의 일정으로 자동 등록되며 장바구니에서는 자동으로 제거됩니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🎯 목표 상세 페이지
+해당 목표에 해당하는 할 일들을 모아서 볼 수 있는 페이지입니다.
+| ![월별 일정](https://github.com/user-attachments/assets/afe43fbf-2bdf-4a2b-92e8-0ae3ec012ac0) | ![일별 일정](https://github.com/user-attachments/assets/fa18c6a5-f684-4536-907d-28f29d997763) | ![할 일 추가 모달](https://github.com/user-attachments/assets/b2c1f32c-d76f-4cc1-a718-1779ea650a8d) |
+|:--:|:--:|:--:|
+| **목표별 상세 페이지** <br> 목표별 할 일을 모아서 한눈에 파악할 수 있습니다. | **목표별 할일 생성** <br> 할일 생성 버튼을 통해 해당 목표에 할 일을 생성할 수 있습니다. | **목표 삭제** <br> 휴지통 아이콘을 클릭하면 해당 목표를 삭제할 수 있습니다. |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| ![할 일 장바구니](https://github.com/user-attachments/assets/91345ac1-2e1a-45a0-afe1-a06ecd84ee07) | ![장바구니 리스트](https://github.com/user-attachments/assets/8ce9aa72-7e1e-4832-bf3f-42b0298edb7e) | ![드래그 앤 드롭](https://github.com/user-attachments/assets/c87c9c33-0620-4fa0-9df8-95e50bae3897) |
+|:--:|:--:|:--:|
+| **할 일 수정** <br> 해당 할 일의 제목이나 날짜를 변경할 수 있습니다. | **장바구니** <br> 목표별로 장바구니에 할 일을 생성하고 달력 아이콘을 클릭하여 원하는 날짜를 클릭하면 남은 할일 목록에 추가됩니다. | **목표 제목, 색상 수정** <br> 목표의 제목과 색상을 수정하여 사용자가 자신만의 스타일로 목표를 꾸미고 더 직관적으로 할 일을 관리할 수 있습니다.|

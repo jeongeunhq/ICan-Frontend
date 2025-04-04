@@ -52,3 +52,18 @@ I CAN은 사용자가 할 일을 쉽고 효율적으로 관리할 수 있도록 
 | ![할 일 장바구니](https://github.com/user-attachments/assets/91345ac1-2e1a-45a0-afe1-a06ecd84ee07) | ![장바구니 리스트](https://github.com/user-attachments/assets/8ce9aa72-7e1e-4832-bf3f-42b0298edb7e) | ![드래그 앤 드롭](https://github.com/user-attachments/assets/c87c9c33-0620-4fa0-9df8-95e50bae3897) |
 |:--:|:--:|:--:|
 | **할 일 수정** <br> 해당 할 일의 제목이나 날짜를 변경할 수 있습니다. | **장바구니** <br> 목표별로 장바구니에 할 일을 생성하고 달력 아이콘을 클릭하여 원하는 날짜를 클릭하면 남은 할일 목록에 추가됩니다. | **목표 제목, 색상 수정** <br> 목표의 제목과 색상을 수정하여 사용자가 자신만의 스타일로 목표를 꾸미고 더 직관적으로 할 일을 관리할 수 있습니다.|
+
+**노트 모아보기**  
+목표별 할일에 등록한 노트들을 모아서 볼 수 있는 페이지입니다.
+![Image](https://github.com/user-attachments/assets/935bbeb9-e3de-46df-ab72-b19038d27fcc)
+**테마 기본 색상에 따라 바뀌는 목표 상세 페이지**  
+테마 색상이 바뀜에 따라 목표 기본 색상도 바뀝니다.
+| ![Image](https://github.com/user-attachments/assets/fe8bac97-4385-4a81-8eff-bf64da7eebbe) | ![Image](https://github.com/user-attachments/assets/2eb27342-fd1f-4dfe-9569-5c88fcf9b566) |
+|:--:|:--:|
+| **기본 색상-분홍색** | **기본 색상-초록색** |
+
+| ![Image](https://github.com/user-attachments/assets/ba1c92b4-cd09-4975-9fc2-2e3c2e2a4f43) | ![Image](https://github.com/user-attachments/assets/67c0e1f2-6a42-4803-bfe8-1456710f3a2a) |
+|:--:|:--:|
+| **기본 색상-보라색** | **테마가 다크모드** |
+
+

@@ -45,6 +45,7 @@ I CAN은 사용자가 할 일을 쉽고 효율적으로 관리할 수 있도록 
 
 ### 🎯 목표 상세 페이지
 해당 목표에 해당하는 할 일들을 모아서 볼 수 있는 페이지입니다.
+
 | ![월별 일정](https://github.com/user-attachments/assets/afe43fbf-2bdf-4a2b-92e8-0ae3ec012ac0) | ![일별 일정](https://github.com/user-attachments/assets/fa18c6a5-f684-4536-907d-28f29d997763) | ![할 일 추가 모달](https://github.com/user-attachments/assets/b2c1f32c-d76f-4cc1-a718-1779ea650a8d) |
 |:--:|:--:|:--:|
 | **목표별 상세 페이지** <br> 목표별 할 일을 모아서 한눈에 파악할 수 있습니다. | **목표별 할일 생성** <br> 할일 생성 버튼을 통해 해당 목표에 할 일을 생성할 수 있습니다. | **목표 삭제** <br> 휴지통 아이콘을 클릭하면 해당 목표를 삭제할 수 있습니다. |
@@ -54,10 +55,15 @@ I CAN은 사용자가 할 일을 쉽고 효율적으로 관리할 수 있도록 
 | **할 일 수정** <br> 해당 할 일의 제목이나 날짜를 변경할 수 있습니다. | **장바구니** <br> 목표별로 장바구니에 할 일을 생성하고 달력 아이콘을 클릭하여 원하는 날짜를 클릭하면 남은 할일 목록에 추가됩니다. | **목표 제목, 색상 수정** <br> 목표의 제목과 색상을 수정하여 사용자가 자신만의 스타일로 목표를 꾸미고 더 직관적으로 할 일을 관리할 수 있습니다.|
 
 **노트 모아보기**  
+
 목표별 할일에 등록한 노트들을 모아서 볼 수 있는 페이지입니다.
+
+
 ![Image](https://github.com/user-attachments/assets/935bbeb9-e3de-46df-ab72-b19038d27fcc)
 **테마 기본 색상에 따라 바뀌는 목표 상세 페이지**  
+
 테마 색상이 바뀜에 따라 목표 기본 색상도 바뀝니다.
+
 | ![Image](https://github.com/user-attachments/assets/fe8bac97-4385-4a81-8eff-bf64da7eebbe) | ![Image](https://github.com/user-attachments/assets/2eb27342-fd1f-4dfe-9569-5c88fcf9b566) |
 |:--:|:--:|
 | **기본 색상-분홍색** | **기본 색상-초록색** |
@@ -66,4 +72,27 @@ I CAN은 사용자가 할 일을 쉽고 효율적으로 관리할 수 있도록 
 |:--:|:--:|
 | **기본 색상-보라색** | **테마가 다크모드** |
 
+### 📝 노트 작성 & 수정
+|노트 작성 or 수정 | 노트 보기-링크 미리보기 가능 | 노트 보기-링크 미리보기 불가능 |
+|-----------|-----------|-----------|
+| 할일에 대한 노트를 작성할 수 있고 글 스타일, 링크도 첨부가 가능합니다.| 링크를 클릭하면 미리보기가 가능합니다. | 미리보기가 불가능한 링크는 주소를 제공합니다. |
+| <img src="https://github.com/user-attachments/assets/de7c908f-6e11-4d32-b6c2-87a3b53d2db4"> | <img src="https://github.com/user-attachments/assets/b7e0f34f-e292-466b-9e2d-695c4b1952f6"> | <img src="https://github.com/user-attachments/assets/42eb92d4-f44d-4ad5-9f44-289c2e568cd2"> |
 
+
+### ⚙️ 사용자 설정  
+사용자의 이름을 수정하고 테마를 자유롭게 선택할 수 있는 페이지입니다.  
+![Image](https://github.com/user-attachments/assets/e51bc30b-666e-4e7a-bf86-16f4e3418a13)
+- 사용자의 이름과 프로필 사진을 변경할 수 있습니다.
+- 사용자의 기호에 따라 테마, 다크모드도 선택할 수 있습니다.
+
+## ⚒️ Tech Stack & Tools
+### 🚀 기술 스택
+- **프론트엔드**: ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat&logo=tailwindcss)  
+- **상태 관리 및 데이터 패칭**: ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?style=flat&logo=tanstack-query)
+
+### 🤝 협업 도구
+- **버전 관리**: ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github)  
+- **프로젝트 관리**: ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira)  
+- **커뮤니케이션**: ![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord)  
+- **문서 관리**: ![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion)  
+- **디자인**: ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma)  

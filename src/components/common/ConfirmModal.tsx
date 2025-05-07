@@ -54,7 +54,7 @@ export default function ConfirmModal({
           <Button
             size="full"
             onClick={onConfirm}
-            className="bg-warn500 py-4 text-gs00 hover:bg-warn500 focus:bg-warn500 active:bg-warn500"
+            className="bg-warn500 py-5 text-gs00 hover:bg-warn500 focus:bg-warn500 active:bg-warn500"
           >
             {confirmText}
           </Button>

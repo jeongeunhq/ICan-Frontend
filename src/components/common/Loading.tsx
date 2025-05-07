@@ -7,9 +7,9 @@ export default function Loading() {
       <FontAwesomeIcon
         icon={faSpinner}
         spin
-        className="size-10 text-slate500"
+        className="size-15 text-slate500"
       />
-      <span className="ml-2 text-lg text-slate400">로딩 중...</span>
+      <span className="ml-3 text-lg text-slate400">로딩 중...</span>
     </div>
   );
 }
